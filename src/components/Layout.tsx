@@ -4,7 +4,7 @@ import React from 'react'
 function layout() {
 
     return function(WrappedComponent: React.FC<any>) {
-      class TheHOC extends React.Component<any> {
+      class renderer extends React.Component<any> {
 
         componentDidMount() {
             if(!this.props.notify) {
@@ -21,7 +21,7 @@ function layout() {
         }
       }
   
-      return TheHOC;
+      return renderer;
     }
   }
 
